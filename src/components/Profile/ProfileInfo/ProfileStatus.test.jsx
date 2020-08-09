@@ -5,32 +5,32 @@ import { create, act } from "react-test-renderer";
 
 
 
-describe("Profile status", () => {
-    test("displaying input after doubleClicked on span", () => {
-        let component;
-        act(() => {
-            component = create(<ProfileStatus authUserId='1' profile={{ userId: '1' }} status='GT40' />);
-        });
-        const instance = component.root;
-        const span = instance.findByType("span");
-        expect(span.props.children).toBe('GT40')
-        act(() => span.props.onDoubleClick());
-        const input = instance.findByType("input");
-        expect(input.props.value).toBe("GT40");
-    });
-    test("update status", async () => {
-        let component;
-        act(() => {
-            component = create(<ProfileStatus authUserId='1' profile={{ userId: '1' }} status='GT40' />);
-        });
-        const instance = component.root;
-        const span = instance.findByType("span");
-        act(() => span.props.onDoubleClick());
-        const input = instance.findByType("input");
-        act(() => input.props.onChange({target:{value:'hello'}}));
-        expect(input.props.value).toBe('hello');
-    });
-});
+// describe("Profile status", () => {
+//     test("displaying input after doubleClicked on span", () => {
+//         let component;
+//         act(() => {
+//             component = create(<ProfileStatus authUserId='1' profile={{ userId: '1' }} status='GT40' />);
+//         });
+//         const instance = component.root;
+//         const span = instance.findByType("span");
+//         expect(span.props.children).toBe('GT40')
+//         act(() => span.props.onDoubleClick());
+//         const input = instance.findByType("input");
+//         expect(input.props.value).toBe("GT40");
+//     });
+//     test("update status", async () => {
+//         let component;
+//         act(() => {
+//             component = create(<ProfileStatus authUserId='1' profile={{ userId: '1' }} status='GT40' />);
+//         });
+//         const instance = component.root;
+//         const span = instance.findByType("span");
+//         act(() => span.props.onDoubleClick());
+//         const input = instance.findByType("input");
+//         act(() => input.props.onChange({target:{value:'hello'}}));
+//         expect(input.props.value).toBe('hello');
+//     });
+// });
 
 
 
