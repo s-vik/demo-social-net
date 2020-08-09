@@ -11,7 +11,7 @@ const ProfileStatus = (props) => {
     let [status, setStatus] = useState(props.status);
     useEffect(() => {
         props.initialize({ userStatus: props.status })
-    }, [props.status]);
+    }, [props,props.status]);
     const activateEditMode = () => {
         if (props.authUserId === props.profile.userId) setEditMode(true);
     }
