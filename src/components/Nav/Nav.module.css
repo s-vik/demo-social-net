@@ -1,0 +1,18 @@
+/* .App_nav {
+  grid-area: nav;
+  position: relative;
+} */
+.App_nav ul {
+  list-style: none;
+}
+.App_nav a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+.item {
+  color: #fff;
+}
+.item a.active {
+  color: gold;
+}
