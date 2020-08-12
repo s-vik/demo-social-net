@@ -7,7 +7,7 @@ const Sidebar = (props) => {
     return (
         <section className={s.sidebarContainer}>
             <Nav />
-            <SidebarRandomUserContainer />
+            {/* <SidebarRandomUserContainer /> */}
         </section>
     );
 }
