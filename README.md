@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+view demo (https://s-vik.github.io/demo-social-net)
+
 ## Available Scripts
 
 In the project directory, you can run:
