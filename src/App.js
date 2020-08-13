@@ -39,7 +39,7 @@ const App = (props) => {
 }
 
 const AppContainer =(props) => {
-  useEffect(()=>{props.appInitialization()},[props,props.initialized])
+  useEffect(()=>{props.appInitialization()},[props.initialized])
     if (!props.initialized) return <Preloader />
     return <App />
 }

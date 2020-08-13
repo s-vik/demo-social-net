@@ -19,7 +19,7 @@ const ProfileContainer = (props) => {
     else {
       props.history.push('/login');
     }
-  }, [props,userId])
+  }, [userId])
 
   if (props.isFetching) return <Preloader />
   else

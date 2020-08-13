@@ -10,7 +10,7 @@ import { extractUsers } from '../../redux/userSelectors';
 const UsersContainer = (props) => {
     useEffect(() => {
             props.getUsers(props.currentPage, props.pageSize);
-    }, [props,props.currentPage, props.pageSize]);
+    }, [props.currentPage, props.pageSize]);
     const onPageChanged = (currentPage) => {
         props.setCurrentPage(currentPage);
         props.getUsers(currentPage, props.pageSize);
